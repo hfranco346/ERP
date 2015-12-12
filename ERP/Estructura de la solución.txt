@@ -1,0 +1,22 @@
+Explicación de la estructura de la solución Mini ERP
+Autor: Héctor Sabillón h.hsabillon@gmail.com
+
+Mini ERP
+  DataRepository
+	Contiene las clases base que reflejan las tablas y las clases de comunicación con la base de datos.
+	A veces también puede contener procedimientos SQL u otro código específico a base de datos.
+  DataClasses
+	Contiene las clases base, structs, y enums que son utilizados dentro del proyecto. Estos pueden estar
+	relacionados pero no necesariamente conectados a los que se encuentran dentro del DataRepository.
+  Services
+	Contiene todas las acciones de tipo CRUD para con la data.
+  Business
+	Contiene todos los cálculos, validación de reglas de negocios y otras validaciones. Su mayor interacción
+	se realiza con la capa de Servicios (Services).
+  Helpers
+	Siempre es recomendable crear clases de ayuda (helpers). Estos pueden contener extensiones de los items de
+	sistema, herramientas de validación estándar, expresiones regulares o items personalizados.
+  UserInterface
+	Contiene lo necesario para desplegar y manipular la información al usuario. UI (User Interface) siempre se
+	organiza por funcionalidad, así que puede contener subcarpetas para formularios relacionados o para controles
+	personalizados o compartidos.
