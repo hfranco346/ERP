@@ -457,6 +457,7 @@
     <EmbeddedResource Include="UserInterface\Ventas\frmNuevaVenta.resx">
       <DependentUpon>frmNuevaVenta.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Base de Datos\ERP.bak" />
     <None Include="ERP.bak" />
     <None Include="ERPDataSet.xsc">
       <DependentUpon>ERPDataSet.xsd</DependentUpon>
@@ -486,6 +487,7 @@
     <Folder Include="DataClasses\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Base de Datos\ERP_BD.sql" />
     <Content Include="Estructura de la solución.txt" />
     <Content Include="README.txt" />
     <None Include="Resources\tanai.png" />
